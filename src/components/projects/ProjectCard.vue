@@ -9,8 +9,6 @@ export default {
   props: {
     project: Object,
   },
-
-  
 };
 </script>
 
@@ -18,7 +16,9 @@ export default {
   <div class="col">
     <div class="card h-100">
       <div class="card-body">
-        <h4>{{ project.title }}</h4>
+          <h4 class="card-title">{{ project.title }}</h4>
+          <hr>
+        <p>{{ project.content }}</p>
       </div>
     </div>
   </div>
