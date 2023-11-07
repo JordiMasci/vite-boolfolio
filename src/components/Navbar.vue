@@ -1,7 +1,11 @@
 <script>
 // import MyComponent from "./components/MyComponent. vue!";
 
-export default {};
+export default {
+  props: {
+    project: Object,
+  },
+};
 </script>
 
 <template>
@@ -29,6 +33,11 @@ export default {};
           <li class="nav-item">
             <router-link :to="{name: 'blog'}">
               <span class="nav-link active" aria-current="page">Blog</span>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link v-if="project && project.id" :to="{ name: 'detail', params: { id: project.id } }">
+              <span class="nav-link active" aria-current="page">Dettaglio</span>
             </router-link>
           </li>
         </ul>

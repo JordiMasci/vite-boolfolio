@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 // importa componenti
 import HomePage from '../pages/HomePage.vue'
 import BlogPage from '../pages/BlogPage.vue'
+import DetailPage from '../pages/DetailPage.vue'
 
 const router = createRouter({
     // aggiungi history
@@ -19,6 +20,11 @@ const router = createRouter({
             name: 'blog',
             path: '/blog',
             component: BlogPage
+        },
+        {
+            name: 'detail',
+            path: '/detail/:id',
+            component: DetailPage
         }
     ]
 });

@@ -20,7 +20,7 @@ export default {
 <template>
   <div class="container">
     <h1>{{ title }}</h1>
-    <Navbar/>
+    <Navbar />
     <router-view></router-view>
   </div>
 
