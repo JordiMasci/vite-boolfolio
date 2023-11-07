@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar.vue";
 export default {
   data() {
     return {
-      title: "Hello world",
+      title: "Progetti Boolean",
       
     };
   },
@@ -19,12 +19,11 @@ export default {
 
 <template>
   <div class="container">
-    <h1>{{ title }}</h1>
     <Navbar />
+    <h1 class="my-5">{{ title }}</h1>
     <router-view></router-view>
   </div>
 
-  <!-- <ProjectList :projects="projects"/> -->
 </template>
 
 <style lang="scss" scoped></style>

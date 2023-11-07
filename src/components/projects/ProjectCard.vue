@@ -1,9 +1,7 @@
 <script>
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
 
   props: {
@@ -19,7 +17,9 @@ export default {
         <h4 class="card-title">{{ project.title }}</h4>
         <hr />
         <p>{{ project.content }}</p>
-        <router-link :to="{ name: 'detail',  params: { id: project ? project.id : null } }">
+        <router-link
+          :to="{ name: 'detail', params: { id: project ? project.id : null } }"
+        >
           Vedi
         </router-link>
       </div>
