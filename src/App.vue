@@ -31,9 +31,12 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <router-link></router-link>
+  </div>
 
-  <ProjectList :projects="projects"/>
+  <!-- <ProjectList :projects="projects"/> -->
 </template>
 
 <style lang="scss" scoped></style>
