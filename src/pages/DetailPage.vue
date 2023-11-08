@@ -17,7 +17,6 @@ export default {
         .get(`http://127.0.0.1:8000/api/projects/${id}`)
         .then((response) => {
           this.project = response.data;
-          
         })
         .catch((error) => {
           console.error("Error fetching project:", error);
@@ -38,8 +37,7 @@ export default {
 
 <template>
   <h1>{{ title }}</h1>
-  <p>{{ this.$route.params.id }}</p>
-  <ProjectCard :project="project" />
+  <ProjectCard :project="project" v-if="project"/>
 </template>
 
 <style lang="scss" scoped></style>
